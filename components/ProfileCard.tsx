@@ -1,14 +1,14 @@
 'use client';
 
 import React from 'react';
-
+import Image from 'next/image';
 
 const ProfileCard: React.FC = () => {
 
     const socialLinks = [
         {
             name: 'Email',
-            href: 'mailto:alex.johnson@example.com',
+            href: 'boomsad130@gmail.com',
             icon: (
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -40,19 +40,22 @@ const ProfileCard: React.FC = () => {
                         {/* Avatar */}
                         <div className="w-36 h-36 mx-auto mb-2 relative">
                             {/* //TODO: Replace with actual profile picture */}
-                            <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold shadow-xl">
-                                PIC
-                            </div>                            
+                            <Image
+                                src="/79e1ca2a641b404871383601d76f9d26.jpg"
+                                alt="Profile"
+                                fill
+                                className="rounded-full object-cover"
+                            />
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-ping opacity-20"></div>
                         </div>
 
                         {/* Name and Title */}
                         {/* //TODO: Replace with actual name and title */}
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
-                            Name Surname
+                            PTC BOOM
                         </h1>
                         <div className="inline-block px-4 py-2 bg-blue-500/20 backdrop-blur-sm rounded-full text-blue-200 text-sm sm:text-base border border-blue-400/30  mb-1">
-                            Your Role
+                            PTC
                         </div>
 
                         {/* Contact Information */}
@@ -66,7 +69,7 @@ const ProfileCard: React.FC = () => {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-white font-medium text-sm sm:text-base">your.email@example.com</p>
+                                    <p className="text-white font-medium text-sm sm:text-base">boomsad130@gmail.com</p>
                                 </div>
                             </div>
 
@@ -77,7 +80,7 @@ const ProfileCard: React.FC = () => {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-white font-medium text-sm sm:text-base">+66 (098) 123-4567</p>
+                                    <p className="text-white font-medium text-sm sm:text-base">+66 (078) 889174 </p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +90,7 @@ const ProfileCard: React.FC = () => {
                     {/* //TODO: Replace with actual bio */}
                     <div className="max-w-xl mb-2">
                         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                            Your brief bio goes here. Share a bit about yourself, your interests, and what you do. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, voluptatibus dignissimos nobis libero similique reiciendis animi, nisi nihil soluta praesentium,.
+                            Boom 15 yers 178/55
                         </p>
                     </div>
 
@@ -126,7 +129,7 @@ const ProfileCard: React.FC = () => {
             {/* Mark component directly embedded */}
             <div className="absolute bottom-0 left-0 right-0 py-4 z-[60]">
                 <p className="text-center text-sm text-white opacity-90 bg-black/20 rounded-lg mx-4 py-2">
-                    <a href="https://peamz4.in.th" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">peamz4</a> X BU OPENHOUSE 2025
+                    <a href="https://peamz4.in.th" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">PTCBOOM</a> X BU OPENHOUSE 2025
                 </p>
             </div>
         </div>
